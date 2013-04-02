@@ -16,4 +16,9 @@ public class MessageFormatTest {
 	public void formatStringUsingRepeatedPositionalParameters() throws Exception {
 		assertEquals("For each x, x == x", MessageFormat.format("For each {0}, {0} == {0}", "x"));
 	}
+	
+	@Test
+	public void formatStringUsingPositionalParametedInInverseOrder() throws Exception {
+		assertEquals("From |yy| to |xx|", MessageFormat.format("From |{1}| to |{0}|", "xx", "yy"));
+	}
 }
