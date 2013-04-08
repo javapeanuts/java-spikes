@@ -9,4 +9,9 @@ public class OverflowTest {
 	public void testMinIntAfterMaxInt() throws Exception {
 		assertEquals(Integer.MIN_VALUE, Integer.MAX_VALUE + 1);
 	}
+	
+	@Test
+	public void testMaxintForTwoIsMinusTwo() throws Exception {
+		assertEquals(-2, Integer.MAX_VALUE * 2);
+	}
 }
