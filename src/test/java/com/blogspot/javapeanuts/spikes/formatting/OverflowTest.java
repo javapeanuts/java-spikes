@@ -14,4 +14,10 @@ public class OverflowTest {
 	public void testMaxintForTwoIsMinusTwo() throws Exception {
 		assertEquals(-2, Integer.MAX_VALUE * 2);
 	}
+	
+	@Test
+	public void testDivideByZero() throws Exception {
+		Double inf = 1d / 0;
+		assertTrue(inf.isInfinite());
+	}
 }
