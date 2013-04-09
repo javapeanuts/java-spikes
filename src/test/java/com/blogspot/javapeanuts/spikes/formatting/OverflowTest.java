@@ -20,4 +20,10 @@ public class OverflowTest {
 		Double inf = 1d / 0;
 		assertTrue(inf.isInfinite());
 	}
+	
+	@Test
+	public void testNotANumber() throws Exception {
+		Double nan = 0d / 0.0;
+		assertTrue(nan.isNaN());
+	}
 }
