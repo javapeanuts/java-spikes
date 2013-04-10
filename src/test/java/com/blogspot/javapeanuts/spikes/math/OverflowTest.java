@@ -1,4 +1,4 @@
-package com.blogspot.javapeanuts.spikes.formatting;
+package com.blogspot.javapeanuts.spikes.math;
 
 import static org.junit.Assert.*;
 
