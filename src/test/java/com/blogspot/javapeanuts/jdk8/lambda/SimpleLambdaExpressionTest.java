@@ -14,4 +14,11 @@ public class SimpleLambdaExpressionTest {
 		Function lambda = (int a, int b) -> a + b;
 		assertEquals(10, lambda.eval(2, 8));
 	}
+
+	@Test
+	public void use2LambdaAsFunctionalInterfaceImplementorWithImplicitParameterTypes()
+			throws Exception {
+		Function lambda = (a, b) -> a + b;
+		assertEquals(10, lambda.eval(2, 8));
+	}
 }
